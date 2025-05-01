@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Orkesterförening</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Piteå & Älvsbyns Orkesterförening</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="omoss.html">Om oss</a></li>
+        <li><a href="konserter.html">Tidigare konserter</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-text">
+      <h2>Kontakt</h2>
+      <div class="contact-container">
+        <div class="contact-card">
+          <h3>Ulrik Bylander</h3>
+          <p>Ordförande</p>
+          <p><span id="mail1"></span></p>
+        </div>
+        <div class="contact-card">
+          <h3>Peter Danielsson</h3>
+          <p>Kassör</p>
+          <p><span id="mail2"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    // Enkla e-postadresser maskerat för att skydda mot bots
+    const mail1 = "ulrik.bylander" + "@" + "gmail.com";
+    const mail2 = "pepepipare" + "@" + "gmail.com";
+  
+    document.getElementById("mail1").innerHTML = `<a href="mailto:${mail1}">${mail1}</a>`;
+    document.getElementById("mail2").innerHTML = `<a href="mailto:${mail2}">${mail2}</a>`;
+  </script>
+
+  <footer>
+    <p>© 2025 Piteå & Älvsbyns Orkesterförening. All rights reserved.</p>
+  </footer>
+</body>
+</html>

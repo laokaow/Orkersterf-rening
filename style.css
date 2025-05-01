@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #FAF9F6;
+    color: #333333;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main{
+    flex: 1;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+
+  .main-text {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .contact-card h3 {
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #1A2942;
+  }
+  
+  .contact-card p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+
+  
+  
+  header {
+    background-color: #1A2942; /* Mörk marinblå istället för vinröd */
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .navbar h1{
+    flex: 1;
+    text-align: left;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: #C2A83E; /* Guldaccent vid hover */
+  }
+  
+  .poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+    text-align: center;
+  }
+  
+  .poster {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  .poster-content{
+    text-align: center;
+  }
+  .poster-content h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1A2942;
+  }
+
+  .concert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    gap: 1rem; /* Mellanrum mellan bilderna */
+    padding: 2rem;
+  }
+  
+  .concert-item {
+    text-align: center;
+  }
+  
+  .concert-item img {
+    max-width: 80%; /* Gör bilden responsiv */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .concert-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1A2942;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
